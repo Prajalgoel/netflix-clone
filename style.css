@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: black;
+}
+
+.first {
+    background-image: url(assets/images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.first .box {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.75;
+    position: absolute;
+    top: 0px;
+}
+
+.logo {
+    width: 150px;
+    z-index: 1;
+}
+
+nav {
+    width: 80vw;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 13%;
+}
+
+nav .buttons {
+    display: flex;
+    gap: 5px;
+}
+
+nav .buttons .english {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 3px 13px;
+    font-weight: 400;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+nav .buttons .english select {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    color: white;
+}
+
+nav .buttons .english select option {
+    color: black;
+}
+
+nav .buttons .signin {
+    padding: 7px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    height: 87%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    gap: 25px;
+}
+
+.content .head {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.content .head h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content .head p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.content .bottom .line {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content .bottom .btmbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.content .bottom .btmbtn .email {
+    background: transparent;
+    padding: 12px 20px;
+    padding-right: 10px;
+    border: 2px solid rgb(210, 189, 189);
+    border-radius: 7px;
+    color: white;
+    font-size: 17px;
+}
+
+.content .bottom .btmbtn .email::placeholder {
+    color: rgb(210, 189, 189);
+    font-size: 17px;
+}
+
+.content .bottom .btmbtn .started {
+    background-color: red;
+    color: white;
+    padding: 7px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+
+.separation {
+    height: 6px;
+    background-color: rgb(66, 60, 60);
+}
+
+.second {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    gap: 40px;
+    padding: 30px 10px;
+}
+
+.enjoy h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.enjoy p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.second .firstimg {
+    position: relative;
+}
+
+.second .firstimg img {
+    width: 500px;
+    position: relative;
+    z-index: 10;
+}
+
+.second .firstimg video {
+    width: 362px;
+    position: absolute;
+    top: 79px;
+    left: 68px;
+}
+
+.third {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px 10px;
+}
+
+.third img {
+    width: 500px;
+}
+
+.fourth {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    gap: 40px;
+    padding: 20px;
+}
+
+.fourth .fourthimg {
+    position: relative;
+}
+
+.fourth .fourthimg img {
+    width: 500px;
+    position: relative;
+    z-index: 10;
+}
+
+.fourth .fourthimg video {
+    position: absolute;
+    top: 64px;
+    left: 66px;
+    width: 407px;
+}
+
+.faq {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.faq h2 {
+    font-size: 48px;
+    font-weight: 700;
+    align-self: center;
+    margin: 20px;
+}
+
+.faq .faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq .box {
+    background-color: #2d2d2d;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq .box:hover {
+    background-color: #574d4d;
+    transition: all 0.5s ease;
+}
+
+footer {
+    max-width: 80vw;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+
+}
+
+footer .grid a {
+    color: white;
+}
+
+footer .no {
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 1350px) {
+    .first{
+        height: 80vh;
+    }
+
+    .content {
+        width: 60vw;
+        gap: 10px;
+    }
+
+    nav {
+        width: 100vw;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .second,
+    .third,
+    .fourth {
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .enjoy h2 {
+        font-size: 40px;
+    }
+
+    .enjoy p {
+        font-size: 24px;
+    }
+
+    footer .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1375px) {
+    .content .head h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+
+    .btmbtn {
+        flex-wrap: wrap;
+    }
+
+    .btmbtn .email {
+        padding: 12px 10px;
+    }
+
+    .second .firstimg img, .third img, .fourth .fourthimg img {
+        width: 300px;
+    }
+    
+    .second .firstimg video, .fourth .fourthimg video {
+        width: 218px;
+        top: 46px;
+        left: 40px;
+    }
+}
